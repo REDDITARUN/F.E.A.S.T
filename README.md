@@ -90,7 +90,12 @@ The project initially used the BART transformer model for text generation but sw
 
 ## Glimpse of the Locally Deployed Application
 
-The locally deployed application, developed using Streamlit, allows users to upload images of ingredients and receive generated recipes. Below are screenshots showcasing the application's functionality, including ingredient detection and recipe generation.
+The locally deployed application, developed using Streamlit, allows users to upload images of ingredients and receive generated recipes. Below is working video showcasing the application's functionality, including ingredient detection and recipe generation.
+
+<video width="600" controls>
+  <source src="assets/GIF_FEAST.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ## References
 

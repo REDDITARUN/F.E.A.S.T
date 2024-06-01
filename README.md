@@ -92,6 +92,12 @@ The project initially used the BART transformer model for text generation but sw
 
 The locally deployed application, developed using Streamlit, allows users to upload images of ingredients and receive generated recipes. Below are screenshots showcasing the application's functionality, including ingredient detection and recipe generation.
 
+![image](https://github.com/REDDITARUN/F.E.A.S.T/assets/53268025/7fec1299-4cd7-40fa-9903-0e29eed7abe8)
+![image](https://github.com/REDDITARUN/F.E.A.S.T/assets/53268025/d885eabf-1831-4fac-a80a-a197263c33c0)
+![image](https://github.com/REDDITARUN/F.E.A.S.T/assets/53268025/8e4c6169-8a0e-4c87-a585-7e8088d0962d)
+
+
+
 ## References
 
 1. Anil, A. K. "GroundingDino Auto-Annotation." GitHub Repository. [GroundingDino Auto-Annotation](https://github.com/anil2k/groundingdino-auto-annotation)

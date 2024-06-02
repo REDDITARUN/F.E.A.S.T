@@ -97,7 +97,8 @@ The project initially used the BART transformer model for text generation but sw
 
 The locally deployed application, developed using Streamlit, allows users to upload images of ingredients and receive generated recipes. Below is working video showcasing the application's functionality, including ingredient detection and recipe generation.
 
-![Application Demo](assets/GIF_FEAST.gif)
+![Untitled video - Made with Clipchamp](https://github.com/REDDITARUN/F.E.A.S.T/assets/53268025/507c7983-44eb-491a-9a21-cc354dd6651f)
+
 
 > Extented to structure the recipe and get nutritional value of the food.
 

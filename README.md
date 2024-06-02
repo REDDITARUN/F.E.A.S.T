@@ -2,12 +2,10 @@
 
 ![Eyes_on_Eats_Poster](https://github.com/REDDITARUN/F.E.A.S.T/assets/53268025/f0517fd7-2a46-4eb5-8599-5b00b6d63091)
 
-
-
 ## Team Members
-- **Charvi Kusuma** [GitHub](https://github.com/kcharvi)
-- **Tarun Reddi** [GitHub](https://github.com/REDDITARUN)
 
+-   **Charvi Kusuma** [GitHub](https://github.com/kcharvi)
+-   **Tarun Reddi** [GitHub](https://github.com/REDDITARUN)
 
 ## What's This Project and How Is It Used?
 
@@ -16,38 +14,42 @@ FEAST, short for Food & Ingredient AI Suggestion Technology, is an innovative pr
 ## How Can This Project Transform Food Delivery Apps Like Uber Eats and DoorDash?
 
 FEAST can significantly enhance food delivery apps by offering personalized meal suggestions based on the ingredients users have at home. By integrating FEAST, apps like Uber Eats and DoorDash can:
-- Provide users with meal options that complement their existing pantry items, encouraging users to order specific ingredients they lack.
-- Suggest healthier meal alternatives by identifying available ingredients and recommending balanced recipes.
-- Enhance user engagement through personalized meal planning features, potentially increasing order frequency and customer satisfaction.
+
+-   Provide users with meal options that complement their existing pantry items, encouraging users to order specific ingredients they lack.
+-   Suggest healthier meal alternatives by identifying available ingredients and recommending balanced recipes.
+-   Enhance user engagement through personalized meal planning features, potentially increasing order frequency and customer satisfaction.
 
 ## Benefits from a Consumer Point of View
 
 From a consumer's perspective, FEAST offers several advantages:
-- **Personalized Recipes**: Users receive customized meal suggestions tailored to the ingredients they have, reducing the time spent deciding what to cook.
-- **Reduced Food Waste**: By utilizing available ingredients, users can minimize food wastage.
-- **Cost Savings**: Encourages home cooking with available ingredients, potentially lowering the frequency of takeout orders.
-- **Convenience**: Simplifies the meal planning process, making it easier for users to prepare meals without extensive planning.
+
+-   **Personalized Recipes**: Users receive customized meal suggestions tailored to the ingredients they have, reducing the time spent deciding what to cook.
+-   **Reduced Food Waste**: By utilizing available ingredients, users can minimize food wastage.
+-   **Cost Savings**: Encourages home cooking with available ingredients, potentially lowering the frequency of takeout orders.
+-   **Convenience**: Simplifies the meal planning process, making it easier for users to prepare meals without extensive planning.
 
 ## General Overview of the Project
 
 <img width="1963" alt="Project_Pipeline" src="https://github.com/REDDITARUN/F.E.A.S.T/assets/53268025/17fdca8e-2e0e-411a-9cef-63e2499df06b">
 
-
 FEAST integrates object detection and text generation to create a seamless user experience:
+
 1. **Image Analysis**: Users upload images of their ingredients.
 2. **Object Detection**: The system identifies and labels the ingredients using trained YOLO models.
 3. **Recipe Generation**: A transformer model generates recipes based on the detected ingredients.
 4. **User Interaction**: The generated recipes are presented to the user through application.
 
-## Dataset Overview 
+## Dataset Overview
 
 The project uses two types of datasets:
+
 1. **Object Detection Data**: Collected through web scraping using the Bing image downloader, including images of 100 different ingredients, each class containing 50 images.
 2. **Text Generation Data**: The RecipeNLG dataset, encompassing over 2 million recipes, including titles, ingredients, directions, links, and Named Entity Recognition (NER) labels.
 
-## Data Preprocessing 
+## Data Preprocessing
 
 The preprocessing steps include:
+
 1. **Data Cleaning**: Ensuring consistency in image formats and directory names.
 2. **Data Augmentation**: Augmenting underrepresented classes to ensure uniformity.
 3. **Annotation**: Automating the annotation process using Grounding DINO for object detection.
@@ -56,6 +58,7 @@ The preprocessing steps include:
 ## Object Detection Models Trained Here
 
 The project trained multiple versions of YOLO models:
+
 1. **YOLO_v7_Version_1**
 2. **YOLO_v7_Version_2**
 3. **YOLO_v7_Version_3**
@@ -65,17 +68,19 @@ The project trained multiple versions of YOLO models:
 ## Results Table
 
 ### YOLO V7 Evaluation
-| Version       | Precision | Recall | mAP@0.5 |
-|---------------|-----------|--------|---------|
-| Version 1     | 0.528     | 0.504  | 0.527   |
-| Version 2     | 0.526     | 0.49   | 0.547   |
-| Version 3     | 0.607     | 0.476  | 0.557   |
+
+| Version   | Precision | Recall | mAP@0.5 |
+| --------- | --------- | ------ | ------- |
+| Version 1 | 0.528     | 0.504  | 0.527   |
+| Version 2 | 0.526     | 0.49   | 0.547   |
+| Version 3 | 0.607     | 0.476  | 0.557   |
 
 ### YOLO V9 Evaluation
-| Version       | Precision | Recall | mAP@0.5 |
-|---------------|-----------|--------|---------|
-| Version 1     | 0.416     | 0.391  | 0.394   |
-| Version 2     | 0.477     | 0.438  | 0.461   |
+
+| Version   | Precision | Recall | mAP@0.5 |
+| --------- | --------- | ------ | ------- |
+| Version 1 | 0.416     | 0.391  | 0.394   |
+| Version 2 | 0.477     | 0.438  | 0.461   |
 
 ## Transformer Model Used Here
 
@@ -90,7 +95,11 @@ The project initially used the BART transformer model for text generation but sw
 
 ## Glimpse of the Locally Deployed Application
 
-The locally deployed application, developed using Streamlit, allows users to upload images of ingredients and receive generated recipes. Below are screenshots showcasing the application's functionality, including ingredient detection and recipe generation.
+The locally deployed application, developed using Streamlit, allows users to upload images of ingredients and receive generated recipes. Below is working video showcasing the application's functionality, including ingredient detection and recipe generation.
+
+![Application Demo](assets/GIF_FEAST.gif)
+
+> Extented to structure the recipe and get nutritional value of the food.
 
 ![image](https://github.com/REDDITARUN/F.E.A.S.T/assets/53268025/7fec1299-4cd7-40fa-9903-0e29eed7abe8)
 ![image](https://github.com/REDDITARUN/F.E.A.S.T/assets/53268025/d885eabf-1831-4fac-a80a-a197263c33c0)
